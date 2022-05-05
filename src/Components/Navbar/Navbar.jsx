@@ -5,17 +5,17 @@ export const NavBar = () => {
         <div className="container">
             <nav className="nav">
                 <div className="nav_brand">
-                    <a className="nav_link" href="#">MiMarca</a>
+                    <a className="nav_link" href="*">MiMarca</a>
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <a className="nav_link" href="#">Categoria 1</a>
+                        <a className="nav_link" href="*">Categoria 1</a>
                     </li>
                     <li>
-                        <a className="nav_link" href="#">Categoria 2</a>
+                        <a className="nav_link" href="*">Categoria 2</a>
                     </li>
                     <li>
-                        <a className="nav_link" href="#">Carrito</a>
+                        <a className="nav_link" href="*">Carrito</a>
                     </li>
                 </ul>
             </nav>
