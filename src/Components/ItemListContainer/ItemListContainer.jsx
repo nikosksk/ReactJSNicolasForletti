@@ -1,23 +1,37 @@
-import React, {useState} from "react";
-import Title from "../Navbar/Title/Title";
+import React,{useState} from 'react'
 
-export const ItemListContainer = ({texto}) => {
-    const [suma, setSuma] = useState(0)
-    
-    return (
-        <div>
-        <Title greeting={texto}/>
-
-        <button onClick={()=>{
-            setSuma(suma +1)
+const ItemListContainer = (props) => {
+    const [contador, setContador] = useState(1)
+    const [stock, setStock] = useState(props.stock - 1)
+    const [outStock, setOutStock] = useState(false)
+    const [exceedStock, setExceedStock] = useState(false)
+  return (
+    <div>
+        <button disabled={outStock} 
+                onClick={()=>{
+          if(stock <= 1){
+            setOutStock(true)
+            setExceedStock(false)
+          }else{
+            setOutStock(false)
+          }
+           setContador(contador + 1)
+           setStock(stock - 1)
         }}>+</button>
-        {suma}
-        <button onClick={()=>{
-            setSuma(suma -1)
+        <p>Unidades: {contador}</p>
+        <p>El stock es: {stock}</p>
+        <button disabled={exceedStock} onClick={()=>{
+          if(stock >= props.stock - 1){
+            setExceedStock(true)
+          } else {
+            setOutStock(false)
+          }
+          setContador(contador - 1)
+          setStock(stock + 1)
         }}>-</button>
-
-        </div>
-    )
+        <div onClick={()=>alert("has agregado " + contador + " unidad/es")}>Agregar al carrito</div>
+    </div>
+  )
 }
 
-export default ItemListContainer;
+export default ItemListContainer
