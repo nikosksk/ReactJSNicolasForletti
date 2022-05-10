@@ -5,7 +5,7 @@ const ItemCount = (props) => {
     const [stock, setStock] = useState(props.stock - 1)
 
   return (
-    <div className=' w-full h-screen bg-black text-white'>
+    <div>
         <button disabled={contador > props.stock - 1 ? true : false} 
                 onClick={()=>{
           // if(stock <= 1){
@@ -28,7 +28,7 @@ const ItemCount = (props) => {
           setContador(contador - 1)
           setStock(stock + 1)
         }}>-</button>
-        <div onClick={()=>alert("has agregado " + contador + " unidad/es" + " y el stock restante es " + stock)}>Agregar al carrito</div>
+        <div onClick={()=>alert("has agregado " + contador + " unidad/es y el stock restante es " + stock)}>Agregar al carrito</div>
     </div>
   )
 }

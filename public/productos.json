@@ -1,0 +1,11 @@
+{
+  "productos": [
+    { "name": "God Of War", "price": 500 },
+
+    { "name": "Counter Strike", "price": 300 },
+
+    { "name": "League Of Legends", "price": 500 },
+
+    { "name": "Assasing Creed", "price": 600 }
+  ]
+}

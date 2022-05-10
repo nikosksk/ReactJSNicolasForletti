@@ -7,6 +7,7 @@ function App() {
     <>
     <NavBar />
     <ItemCount stock={5}/>
+    <ItemListContainer/>
     </>
   );
 }
