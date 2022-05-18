@@ -2,10 +2,10 @@
   "productos": [
     { "name": "God Of War", "price": 500 },
 
-    { "name": "Counter Strike", "price": 300 },
+    { "name": "Forza Forbidden West", "price": 300 },
 
-    { "name": "League Of Legends", "price": 500 },
+    { "name": "Forza Horizon 5", "price": 500 },
 
-    { "name": "Assasing Creed", "price": 600 }
+    { "name": "Mario Bross Odyssy", "price": 600 }
   ]
 }
