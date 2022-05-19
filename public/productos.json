@@ -1,11 +1,11 @@
 {
   "productos": [
-    { "name": "God Of War", "price": 500 },
+    { "id": "1", "name": "God Of War", "price": 500, "imagen":"https://th.bing.com/th/id/OIP.iS1y4dERUzBN1Ld3ochhYgHaEK?pid=ImgDet&rs=1"},
 
-    { "name": "Forza Forbidden West", "price": 300 },
+    { "id": "2", "name": "Forza Forbidden West", "price": 300, "imagen":"https://th.bing.com/th/id/OIP.iS1y4dERUzBN1Ld3ochhYgHaEK?pid=ImgDet&rs=1" },
 
-    { "name": "Forza Horizon 5", "price": 500 },
+    { "id": "3", "name": "Forza Horizon 5", "price": 500, "imagen":"https://th.bing.com/th/id/OIP.iS1y4dERUzBN1Ld3ochhYgHaEK?pid=ImgDet&rs=1" },
 
-    { "name": "Mario Bross Odyssy", "price": 600 }
+    { "id": "4", "name": "Mario Bross Odyssy", "price": 600,"imagen":"https://th.bing.com/th/id/OIP.iS1y4dERUzBN1Ld3ochhYgHaEK?pid=ImgDet&rs=1" }
   ]
 }

@@ -1,15 +1,23 @@
-import NavBar from "./Components/Navbar/Navbar";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-import ItemCount from "./Components/ItemCount/ItemCount";
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Index from "./Components/pages/Index"
+import PagesProductos from "./Components/pages/PagesProductos";
+import SingleProducts from './Components/pages/SingleProducts';
+// import ItemCount from "./Components/ItemCount/ItemCount";
+// import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
     <>
-    <NavBar />
-    <ItemCount stock={5}/>
-    <ItemListContainer/>
-    <ItemDetailContainer/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Index/>} />
+        <Route path="/productos" element={<PagesProductos/>} />  
+        <Route path="/producto/:id" element={<SingleProducts/>}/>
+      </Routes>
+
+
+    </Router>
+   
     </>
   );
 }
