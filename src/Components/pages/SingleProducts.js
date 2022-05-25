@@ -4,6 +4,7 @@ import Navbar from '../Navbar'
 import {useParams} from 'react-router-dom'
 import axios from "axios"
 
+
 const SingleProducts = () => {
 
     const {id} = useParams();
@@ -15,6 +16,8 @@ const SingleProducts = () => {
              .catch((err)=> console.log(console.log(err)))
     }, [id]);
 
+  
+
   return (
     <div>
     <Navbar/>
@@ -23,7 +26,7 @@ const SingleProducts = () => {
         <img className="h-[calc(30rem)] w-full object-cover" src={producto.imagen} alt=""/>
         <p>Descripcion: {producto.descripcion}</p>
         <p>${producto.price}</p>
-
+       
     </div>
     <p>el id es {id}</p>
     <p>el nombre es {producto.name}</p>
