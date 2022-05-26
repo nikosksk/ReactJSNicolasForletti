@@ -1,16 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Boton from "BottomNav/BottnCarr"
+import productos from 'productos.json'
 
 
 const Item = (props) => {
-
-  const manejarClick = () => {
-    console.log("click")
-  }
-  const reiniciarContador = () => {
-    console.log("reiniciar")
-  }
 
   return (
       
@@ -22,8 +15,9 @@ const Item = (props) => {
           <img className="h-44 w-full object-cover" src={props.productos.imagen} alt="#"/>
         </div>
         <div className=' bg-blue-400 p-5 cursor-pointer rounded-xl overflow-hidden py-4'>Comprar</div>
-        <Boton texto="click" esBoton={true} manejarClick={manejarClick}/>
-        <Boton texto="reiniciar" esBoton={false} manejarClick={reiniciarContador}/>
+        <div>
+        <button  onClick={()=> console.log(productos)}>Agregar a carrito</button>
+        </div>
         </Link>
     </div>
   )
